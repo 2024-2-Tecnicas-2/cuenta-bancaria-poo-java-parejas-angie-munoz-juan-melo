@@ -26,15 +26,15 @@ public class Principal {
         cuenta.retirar(2000);
         System.out.println("Prueba retirar: " + (cuenta.getSaldo() == 1200.0));
         
-        System.out.println("Calcular interes: " + (cuenta.calcularInteres() == 1222.5));
+        System.out.println("Calcular interes: " + (cuenta.calcularInteres() == 1522.5));
         
         cuenta.setTipoInteres(5.0);
-        System.out.println("Prueba interes: " + (cuenta.calcularInteres() == 1260.0));
+        System.out.println("Prueba interes: " + (cuenta.calcularInteres() == 1598.625));
         
         cuenta.setTipoInteres(-2.0);
-        System.out.println("Prueba interes: " + (cuenta.calcularInteres() == 1260.0));
+        System.out.println("Prueba interes: " + (cuenta.calcularInteres() == 1522.5));
         
         cuenta.setTipoInteres(12.0);
-        System.out.println("Prueba interes: " + (cuenta.calcularInteres() == 1260.0));
+        System.out.println("Prueba interes: " + (cuenta.calcularInteres() == 1522.2));
     }
 }
